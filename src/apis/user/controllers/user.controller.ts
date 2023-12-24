@@ -199,7 +199,7 @@ export class UserController extends BaseController<UserEntity>(UserEntity, 'user
 	// // order of user
 	@Post('/list/order')
 	async getListOrder(@Res() res, @Req() req) {
-		const apiUrl = 'http://localhost:3088/api/s3/get-list-order';
+		const apiUrl = 'https://system-service-production.up.railway.app/api/s3/get-list-order';
 		
 
 		try {
@@ -214,7 +214,7 @@ export class UserController extends BaseController<UserEntity>(UserEntity, 'user
 	@Post('/list/order-by-shop')
 	async getListOrderByShop(@Res() res, @Req() req) {
 		
-		const apiUrl = 'http://localhost:3088/api/s3/get-list-order-by-shop';
+		const apiUrl = 'https://system-service-production.up.railway.app/api/s3/get-list-order-by-shop';
 
 		try {
 			const response = await axios.post(apiUrl, req.body);

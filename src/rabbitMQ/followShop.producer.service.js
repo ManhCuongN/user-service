@@ -2,7 +2,7 @@ const amqp = require('amqplib')
 // import config from '../configurl/url-config'
 const runProducerFollowShop = async(messages) => {
     try {
-        const connection = await amqp.connect('amqp://guest:guest@localhost')
+        const connection = await amqp.connect('amqps://ejaqrslc:FdbEYeWt40a6ggQ8zhoALDTREg1wcFUf@gerbil.rmq.cloudamqp.com/ejaqrslc')
         const channel = await connection.createChannel()
 
         const queueName = 'follow-shop-topic'

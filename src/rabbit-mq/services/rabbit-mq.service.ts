@@ -6,7 +6,7 @@ import * as amqp from 'amqplib';
 export class RabbitMQService {
 	runProducerFollowShop = async(messages) => {
 		try {
-			const connection = await amqp.connect('amqp://guest:guest@localhost')
+			const connection = await amqp.connect('amqps://ejaqrslc:FdbEYeWt40a6ggQ8zhoALDTREg1wcFUf@gerbil.rmq.cloudamqp.com/ejaqrslc')
 	
 			const channel = await connection.createChannel()
 	
@@ -28,7 +28,7 @@ export class RabbitMQService {
 	
 	runProducerUnFollowShop = async(messages) => {
 		try {
-			const connection = await amqp.connect('amqp://guest:guest@localhost')
+			const connection = await amqp.connect('amqps://ejaqrslc:FdbEYeWt40a6ggQ8zhoALDTREg1wcFUf@gerbil.rmq.cloudamqp.com/ejaqrslc')
 	
 			const channel = await connection.createChannel()
 	
@@ -51,7 +51,7 @@ export class RabbitMQService {
 
 	runProducerGetNotiByUser = async(messages) => {
 		try {
-			const connection = await amqp.connect('amqp://guest:guest@localhost')
+			const connection = await amqp.connect('amqps://ejaqrslc:FdbEYeWt40a6ggQ8zhoALDTREg1wcFUf@gerbil.rmq.cloudamqp.com/ejaqrslc')
 	
 			const channel = await connection.createChannel()
 	
