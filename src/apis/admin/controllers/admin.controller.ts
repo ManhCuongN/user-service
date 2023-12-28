@@ -38,7 +38,7 @@ export class AdminController extends BaseController<AdminEntity>(AdminEntity, 'a
 
 	@Post('/list/shop')
 	async getListOrder(@Res() res, @Req() req) {
-		const apiUrl = 'https://product-service-production-0ee8.up.railway.app/v1/api/list/shop';
+		const apiUrl = 'https://api-gateway-production-187c.up.railway.app/v1/api/list/shop';
 		try {
 			const response = await axios.post(apiUrl, req.body);
 			const data = response.data;
@@ -51,7 +51,7 @@ export class AdminController extends BaseController<AdminEntity>(AdminEntity, 'a
 
 	@Post('/update/role/shop')
 	async updateRoleForShop(@Res() res, @Req() req) {
-		const apiUrl = 'https://product-service-production-0ee8.up.railway.app/v1/api/update/role/shop/';
+		const apiUrl = 'https://api-gateway-production-187c.up.railway.app/v1/api/update/role/shop/';
 		try {
 			const response = await axios.post(apiUrl, req.body);
 			const data = response.data;
