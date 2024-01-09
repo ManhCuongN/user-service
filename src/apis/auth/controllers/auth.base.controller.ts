@@ -51,7 +51,7 @@ export const AuthBaseController = <Entity extends UserEntity | AdminEntity>() =>
 
 				// Trả về mã thông báo (token) trong URL query
 				return res.redirect(
-					`https://lambent-klepon-30bcab.netlify.app/login?accessToken=${accessToken}&refreshToken=${refreshToken}`
+					`https://master--vocal-croquembouche-c4f1a0.netlify.app/login?accessToken=${accessToken}&refreshToken=${refreshToken}`
 				);
 			} catch (error) {
 				// Xử lý lỗi nếu cần thiết
